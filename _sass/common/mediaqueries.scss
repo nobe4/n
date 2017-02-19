@@ -1,0 +1,15 @@
+// Source: https://davidwalsh.name/write-media-queries-sass
+$desktop-width: 768px;
+$tablet-width: 480px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

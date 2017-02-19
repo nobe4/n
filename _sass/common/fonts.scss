@@ -1,0 +1,29 @@
+// Load fonts
+@mixin font-face($name, $path, $weight: null, $style: null) {
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: url(quote("../assets/" +$path + ".ttf")) format("truetype");
+	}
+}
+
+// Titles
+@include font-face(Muli, fonts/Muli/light, 300, null);
+@include font-face(Muli, fonts/Muli/regular, 500, null);
+@include font-face(Muli, fonts/Muli/bold, 700, null);
+
+// Content
+@include font-face(OpenSans, fonts/OpenSans/light, 300, null);
+@include font-face(OpenSans, fonts/OpenSans/regular, 500, null);
+@include font-face(OpenSans, fonts/OpenSans/italic, 500, italic);
+@include font-face(OpenSans, fonts/OpenSans/bold, 700, null);
+
+// Code
+@include font-face(Hack, fonts/Hack/regular, 500, null);
+@include font-face(Hack, fonts/Hack/italic, 500, italic);
+@include font-face(Hack, fonts/Hack/bold, 700, null);
+@include font-face(Hack, fonts/Hack/bolditalic, 700, italic);
+
+// Update font-awesome path
+$fa-font-path: "../assets/fonts/FontAwesome";

@@ -1,0 +1,17 @@
+/*
+	Center images, and let them have the right size.
+	Max width to 100% of the parent.
+	Main img are forced to width 100%, for article main image.
+*/
+
+main {
+	> img {
+		width: 100%;
+	}
+
+	img {
+		margin: auto;
+		max-width: 100%;
+		display: block;
+	}
+}

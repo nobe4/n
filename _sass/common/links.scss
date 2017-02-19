@@ -1,0 +1,11 @@
+a {
+	color: $black;
+
+	&.clean {
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: lighten($black, 30%);
+	}
+}

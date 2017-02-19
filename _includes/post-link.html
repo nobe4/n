@@ -1,0 +1,17 @@
+<a class="clean {% if post.image %}image{% endif %}" href="{{ post.url }}">
+	{% if post.image %}
+		<figure style="background-image:url('{{ site.url }}{{ site.image.path }}{{ post.image .link }}')">
+		</figure>
+	{% endif %}
+
+	<h2>{{ post.title }}</h2>
+	<p>{{ post.description }}</p>
+
+	<p>
+		{{ post.date | date_to_string }} <br>
+		{% if site.reading_time %}
+			{% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
+			~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+		{% endif %}
+	</p>
+</a>

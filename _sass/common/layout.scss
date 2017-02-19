@@ -1,0 +1,20 @@
+// Define the different elements width with some media queries
+
+* {
+	box-sizing: border-box;
+}
+
+main, footer {
+
+	margin: auto;
+	padding: 0 1em;
+
+	@include desktop {
+		width: $desktop-width;
+	}
+
+	@include tablet {
+		width: 100%;
+	}
+
+}

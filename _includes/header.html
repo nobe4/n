@@ -1,0 +1,6 @@
+{% comment %} Display only for non-homepage page {% endcomment %}
+{% if page.url != "/" %}
+	<header>
+		<a class="clean" href="/"> {{ site.owner.name }} </a>
+	</header>
+{% endif %}

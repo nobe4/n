@@ -1,0 +1,19 @@
+main section ul.social {
+	width: 100%;
+	text-align: center;
+
+	padding-left: 0;
+
+	li {
+		list-style-type: none;
+
+		&:not(:first-child){
+			display: inline-block;
+			margin: 0 0.25em;
+		}
+
+		a {
+			font-size: 2em;
+		}
+	}
+}

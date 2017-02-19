@@ -1,0 +1,92 @@
+// based on Gruvbox's palette
+$black: #282828;
+$white: #ebdbb2;
+$grey: #a89984;
+$red: #cc241d;
+$blue: #458588;
+$violet: #b16286;
+$yellow: #d79921;
+$green: #98971a;
+
+
+code {
+	background-color: $black;
+	color: $white;
+	padding: 0.2em;
+
+	.err { color: $white; background-color: $red; } /* Error */
+
+	.k { color: $blue; } /* Keyword */
+	.l { color: $violet; } /* Literal */
+	.n { color: $white; } /* Name */
+
+	.o { color: $red; } /* Operator */
+	.p { color: $white; } /* Punctuation */
+
+	.c { color: $grey; } /* Comment */
+	.cm { color: $grey; } /* Comment.Multiline */
+	.cp { color: $red; } /* Comment.Preproc */
+	.c1 { color: $grey; } /* Comment.Single */
+	.cs { color: $grey; } /* Comment.Special */
+
+	.ge { font-style: italic } /* Generic.Emph */
+	.gs { font-weight: bold } /* Generic.Strong */
+
+	.kc { color: $blue; } /* Keyword.Constant */
+	.kd { color: $blue; } /* Keyword.Declaration */
+	.kn { color: $red; } /* Keyword.Namespace */
+	.kp { color: $blue; } /* Keyword.Pseudo */
+	.kr { color: $blue; } /* Keyword.Reserved */
+	.kt { color: $blue; } /* Keyword.Type */
+
+	.ld { color: $violet; } /* Literal.Date */
+	.m { color: $violet; } /* Literal.Number */
+
+	.na { color: $white; } /* Name.Attribute */
+	.nb { color: $yellow; } /* Name.Builtin */
+	.nc { color: $white; } /* Name.Class */
+	.no { color: $blue; } /* Name.Constant */
+	.nd { color: $white; } /* Name.Decorator */
+	.ni { color: $white; } /* Name.Entity */
+	.ne { color: $green; } /* Name.Exception */
+	.nf { color: $green; } /* Name.Function */
+	.nl { color: $white; } /* Name.Label */
+	.nn { color: $white; } /* Name.Namespace */
+	.nx { color: $white; } /* Name.Other */
+	.py { color: $white; } /* Name.Property */
+	.nt { color: $red; } /* Name.Tag */
+	.nv { color: $white; } /* Name.Variable */
+	.ow { color: $red; } /* Operator.Word */
+	.w { color: $white; } /* Text.Whitespace */
+
+	.mf { color: $violet; } /* Literal.Number.Float */
+	.mh { color: $violet; } /* Literal.Number.Hex */
+	.mi { color: $violet; } /* Literal.Number.Integer */
+	.il { color: $violet; } /* Literal.Number.Integer.Long */
+	.mo { color: $violet; } /* Literal.Number.Oct */
+
+
+	.s { color: $green; } /* Literal.String */
+	.sb { color: $green; } /* Literal.String.Backtick */
+	.sc { color: $green; } /* Literal.String.Char */
+	.sd { color: $green; } /* Literal.String.Doc */
+	.s2 { color: $green; } /* Literal.String.Double */
+	.se { color: $violet; } /* Literal.String.Escape */
+	.sh { color: $green; } /* Literal.String.Heredoc */
+	.si { color: $green; } /* Literal.String.Interpol */
+	.sx { color: $green; } /* Literal.String.Other */
+	.sr { color: $green; } /* Literal.String.Regex */
+	.s1 { color: $green; } /* Literal.String.Single */
+	.ss { color: $green; } /* Literal.String.Symbol */
+
+	.bp { color: $yellow; } /* Name.Builtin.Pseudo */
+	.vc { color: $white; } /* Name.Variable.Class */
+	.vg { color: $yellow; } /* Name.Variable.Global */
+	.vi { color: $white; } /* Name.Variable.Instance */
+
+	.gh { color: $yellow; } /* Generic Heading & Diff Header */
+	.gu { color: $blue; } /* Generic.Subheading & Diff Unified/Comment? */
+	.gd { color: $red; } /* Generic.Deleted & Diff Deleted */
+	.gi { color: $green; } /* Generic.Inserted & Diff Inserted */
+
+}

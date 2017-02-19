@@ -1,0 +1,10 @@
+<ul class="social">
+	<li>Come and say hello</li>
+	{% for social in site.owner.social %}
+		<li>
+			<a href="{{social[1].url}}" class="clean">
+				<i class="fa {{ social[1].fa-icon }}"></i>
+			</a>
+		</li>
+	{% endfor %}
+</ul>

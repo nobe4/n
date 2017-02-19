@@ -1,0 +1,21 @@
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+body.not-found{
+	& > *{
+		@include transition(all 0.5s 1s);
+	}
+
+	& > *:nth-child(1){ transform: rotate3d(0,1,0, 180deg); }
+	& > *:nth-child(2){ transform: rotate3d(1,0,0, 180deg); }
+	& > *:nth-child(3){ transform: rotate3d(0,0,1, 180deg); }
+
+	&:hover > * , &:active > * {
+		transform: rotate3d(0,0,0, 180deg);
+		@include transition(all 0.5s);
+	}
+}

@@ -1,0 +1,34 @@
+$black: #111111;
+$white: #ffffff;
+
+// Source: http://clrs.cc/
+$random_colors : (
+	"blue": #0074D9,
+	"aqua": #7FDBFF,
+	"teal": #39CCCC,
+	"olive": #3D9970,
+	"green": #2ECC40,
+	"lime": #01FF70,
+	"yellow": #FFDC00,
+	"orange": #FF851B,
+	"red": #FF4136,
+	"maroon": #85144b,
+	"fuchsia": #F012BE,
+	"purple": #B10DC9,
+	"gray": #AAAAAA,
+);
+
+body {
+	color: $black;
+	background-color: $white;
+}
+
+@each $name, $value in $random_colors {
+	body.#{"" + $name} {
+		a, h1, .colored {
+			&:hover {
+				color: $value;
+			}
+		}
+	}
+}

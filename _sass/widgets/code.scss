@@ -1,0 +1,10 @@
+@import 'theme/gruvbox';
+
+.highlighter-rouge code, pre code {
+	display: block;
+	padding: 1em;
+
+	// Scroll horizontally, hide the vertical scrollbar
+	overflow-y: hidden;
+	overflow-x: scroll;
+}

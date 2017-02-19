@@ -1,0 +1,44 @@
+// Apply to any article link, main/posts pages and the next/previous also.
+section article a,
+main nav article a{
+	display: block;
+	position: relative;
+	padding: 1em;
+	
+	// Background image
+	figure {
+		margin: 0;
+
+		background-position: center center;
+		background-size: cover;
+
+		z-index: -1;
+
+		// Both image and cover are taking all space
+		&, &:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		// Hide the image behind a white transparent cover
+		&:after{
+			content: '';
+			display: block;
+			background-color: rgba(255,255,255,0.8);
+		}
+	}
+
+	&:hover  {
+
+		figure {
+			// Hide the text and make the image opaque again
+			z-index: 1;
+			&:after {
+				background-color: rgba(255,255,255,0);
+			}
+		}
+	}
+}

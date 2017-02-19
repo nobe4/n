@@ -1,0 +1,46 @@
+---
+
+layout: main
+title: Latest Posts
+
+---
+
+{% if paginator.page == 1 %}
+
+	<h1>{{ site.title }}</h1>
+	<p>{{ site.description }}</p>
+
+{% endif %}
+
+<section>
+
+	{% for post in paginator.posts %}
+
+		<article>
+			{% include post-link.html %}
+		</article>
+
+	{% endfor %}
+
+</section>
+
+{% if paginator.total_pages > 1 %}
+	<nav>
+
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path }}">Previous</a>
+		{% endif %}
+
+		<span>{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path }}">Next</a>
+		{% endif %}
+
+	</nav>
+{% endif %}
+
+<section>
+	{% include social.html %}
+</section>
+

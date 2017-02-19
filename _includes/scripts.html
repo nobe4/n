@@ -1,0 +1,17 @@
+{% if site.google_analytics %}
+	<script>
+
+		/* Generated with https://github.com/shinnn/isogram */
+!function(n,t,h,m,j,k,l){n.GoogleAnalyticsObject=h;n[h]||(n[h]=function(){(n[h].q=n[h].q||[]).push(arguments)});n[h].l=+new Date;k=t.createElement(m);l=t.getElementsByTagName(m)[0];k.src=j;l.parentNode.insertBefore(k,l)}(window,document,'ga','script','//www.google-analytics.com/analytics.js');
+
+		ga('create', '{{ site.google_analytics }}', 'auto');
+		ga('send', 'pageview');
+	</script>
+{% endif %}
+
+<script>
+	/* Choose a random color for the session */
+	var colors = ["blue", "aqua", "teal", "olive", "green", "lime",
+			"yellow", "orange", "red", "maroon", "fuchsia", "purple", "gray", ];
+	document.body.classList.add(colors[Math.floor(Math.random()*colors.length)]);
+</script>

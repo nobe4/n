@@ -1,0 +1,38 @@
+main {
+
+	> h1 {
+		font-size: 3em;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+
+	figure {
+		margin: 0;
+		position: relative;
+
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			
+			background-color: rgba(255, 255, 255, 0.5);
+			padding: 0 0.3em;
+			font-size: 0.5em;
+
+		}
+	}
+
+	section {
+		margin-top: 2em;
+		p {
+			text-align: justify;
+			line-height: 2em;
+		}
+	}
+
+	nav {
+		margin-top: 2em;
+		text-align: right;
+	}
+
+}

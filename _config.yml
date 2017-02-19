@@ -1,0 +1,83 @@
+# ------------------
+# Your configuration
+# ------------------
+
+title:            n thm fr Jkll
+description:      mnml
+created:          Smplfd
+url:
+
+# Owner/author information
+owner:
+  name:           N
+  bio:            Smpl stff
+  # disqus_name:
+  social:
+   github:
+     fa-icon:    fa-github
+     url:        https://github.com/nobe4
+  #  twitter:
+  #    fa-icon:    fa-twitter
+  #    username:   XXX
+  #    url:        https://twitter.com/XXX
+  #  stackexchange:
+  #    fa-icon:    fa-stack-overflow
+  #    url:        http://vi.stackexchange.com/users/123/XXX
+  #  linkedin:
+  #    fa-icon:    fa-linkedin
+  #    url:        https://uk.linkedin.com/in/XXX
+  #  soundcloud:
+  #    fa-icon:    fa-soundcloud
+  #    url:        https://soundcloud.com/XXX
+  # You can add more following the same pattern
+
+# google_analytics: 'UA-XXXXXXXX-X'
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:       Europe/London
+locale:         en_GB
+
+# -------------------------------------------------------
+# Below are more settings, you don't need to change them.
+# -------------------------------------------------------
+
+# Settings for reading time
+reading_time:     true
+words_per_minute: 200
+
+# Edition
+future:         true
+highlighter:    rouge
+markdown:       kramdown
+
+gems:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: ":num/"
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+compress_html:
+  clippings: all
+
+image:
+  path: /assets/images/
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      category: "p"
+      comments: true
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:title/
+
+include: [".htaccess", "_pages"]
+exclude: ["LICENSE", "README.md", "LICENSE"]
