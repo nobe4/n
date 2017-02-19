@@ -1,4 +1,4 @@
-# N, mnml thm fr Jkll
+# [N](http://n.nobe4.fr/n/), mnml thm fr Jkll
 
 (That's: "N, a minimal theme for Jekyll")
 
@@ -16,13 +16,13 @@ Have a look at the different posts to see the possibities of the theme.
 
 ### Pages
 
-Write your pages under `_pages`, no required format here. But make sure you include a `permalink` variable in the header.\
+Write your pages under `_pages`, no required format here. But make sure you include a `permalink` variable in the header.
 
 ### Images
 
 They live under `assets/images`. You can use the organisation you want.
 
-## Design:
+## Design
 
 ### Colors
 
@@ -50,6 +50,5 @@ Inspired by [clrs.cc](http://clrs.cc/)
 - [OpenSans](https://fonts.google.com/specimen/Open+Sans)
 - [Hack](http://sourcefoundry.org/hack/)
 - [FontAwesome](https://fontawesome.io)
-
 
 ## [LICENSE](https://github.com/nobe4/n/blob/master/LICENSE)
