@@ -1,4 +1,4 @@
-# [N](http://n.nobe4.fr/n/), mnml thm fr Jkll
+# [N](http://n.nobe4.fr/), mnml thm fr Jkll
 
 (That's: "N, a minimal theme for Jekyll")
 
